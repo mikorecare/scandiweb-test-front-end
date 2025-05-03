@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './App.css'
 import { fetchData } from './services/api.services'
+import Header from './components/header/header';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
   }, [])
   return (
     <>
-      <h1>Hi I'm Miko</h1>
+      <Header />
     </>
   )
 }
