@@ -2,10 +2,6 @@ import { Product } from "../products/product.abstract.class";
 
 export class CardProps {
   
-  public get inCart(): boolean {
-    return true;
-  }
-
   public get inStock(): boolean {
     return this.product.inStock;
   }

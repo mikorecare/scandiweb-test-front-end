@@ -1,13 +1,14 @@
 .product-card {
-  width: 386;
-  height: 444;
-  padding: 16px;
+  width: 24.125rem;
+  height: 27.75rem;
+  padding: 1rem;
   position: relative;
   border: none;
   text-align: start;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 6.25rem;
 }
 
 .product-card:hover {
@@ -15,8 +16,8 @@
   cursor: pointer;
 }
 
-.product-card-box-shadow {
-  box-shadow: 0px 4px 35px 0px #a8acb030;
+.product-card:hover .product-in-cart {
+  opacity: 1;
 }
 
 .image-container {
@@ -25,14 +26,18 @@
 
 .image-container > img {
   width: 100%;
-  height: 330px;
+  height: 20.625rem;
   object-fit: contain;
+}
+
+.image-container .out-of-stock {
+  opacity: 50%;
 }
 
 .product-in-cart {
   position: absolute;
   top: 92%;
-  right: 10%;
+  right: 2rem;
   margin: 0;
   width: 52px;
   height: 52px;
@@ -42,6 +47,8 @@
   justify-content: center;
   align-items: center;
   border: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .product-card-body {
@@ -52,7 +59,7 @@
 
 .product-card-title {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 160%;
   letter-spacing: 0px;
   vertical-align: middle;
@@ -61,7 +68,7 @@
 .price-regular-font {
   color: #1d1f22;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 160%;
   letter-spacing: 0%;
   text-align: left;
@@ -78,7 +85,7 @@
   border-radius: 0.25rem;
   font-family: Raleway;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
   line-height: 160%;
   letter-spacing: 0px;

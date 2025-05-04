@@ -1,20 +1,19 @@
+import "./product-card.css";
+
 import { CardProps } from "../../models/props/card.prop.class";
 
 const ProductCard = ({ cardProps }: { cardProps: CardProps }) => {
   return (
     <div
-      className={`product-card ${
-        cardProps.inCart ? "product-card-box-shadow" : ""
-      }`}
-      style={{ width: "20rem" }}
+      className="product-card"
     >
       <div className="image-container">
         <img
           src={cardProps.image}
-          className={`${!cardProps.inStock ? "opacity-50" : ""}`}
+          className={`${!cardProps.inStock ? "out-of-stock" : ""}`}
           alt={cardProps.productName}
         />
-        {cardProps.inCart && cardProps.inStock && (
+        {cardProps.inStock && (
           <button
             className="action-button product-in-cart"
           >
