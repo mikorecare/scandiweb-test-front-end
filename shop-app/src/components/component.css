@@ -1,0 +1,18 @@
+
+
+.nav-link.active {
+  text-transform: uppercase;
+  color: #5ece7b !important;
+  border-bottom: solid 1px #5ece7b;
+  font-weight: 600 !important;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 400 !important;
+}
+
+.action-button {
+  background-color: #5ece7b !important;
+  color: white !important;
+}
